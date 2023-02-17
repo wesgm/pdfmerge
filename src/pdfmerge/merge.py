@@ -2,7 +2,11 @@ import sys;
 from PyPDF2 import PdfMerger;
 import argparse;
 import os;
-
+'''
+TODO:
+-Move merging logic to a separate class/function
+-Add cli options to build files
+'''
 INVALID_PATH = "Invalid path. Please check the path and try again.";
 INVALID_DIR = "Invalid directory. Please check the path and try again.";
 
