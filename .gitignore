@@ -1,1 +1,4 @@
 *.pdf
+build/
+dist/
+src/pdfmerge.egg-info/

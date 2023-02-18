@@ -10,7 +10,7 @@ TODO:
 INVALID_PATH = "Invalid path. Please check the path and try again.";
 INVALID_DIR = "Invalid directory. Please check the path and try again.";
 
-def main():
+def merge():
     parser = argparse.ArgumentParser(prog = "pdfmerge", description="Merge PDF files");
     parser.add_argument("-v", "--version", action="version", version="%(prog)s 0.0.1");
     parser.add_argument("-d", "--dir", metavar="dir", type=str, nargs='?', default=None, help="Path to directory to merge all PDF files in the directory");
@@ -44,6 +44,3 @@ def main():
             merger.append(file);
     merger.write(args.output);
     merger.close();
-
-if __name__ == "__main__":
-    main();
